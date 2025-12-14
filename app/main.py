@@ -1,3 +1,4 @@
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +17,22 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {"mutable": [], "immutable": []}
+
+vars_list = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins,
+]
+
+for x in vars_list:
+    if isinstance(x, (list, set, dict)):
+        sorted_variables["mutable"].append(x)
+    else:
+        sorted_variables["immutable"].append(x)
+
