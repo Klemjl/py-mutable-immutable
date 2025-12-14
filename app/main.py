@@ -1,4 +1,3 @@
-
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -30,9 +29,8 @@ vars_list = [
     collection_of_coins,
 ]
 
-for x in vars_list:
-    if isinstance(x, (list, set, dict)):
-        sorted_variables["mutable"].append(x)
+for value in vars_list:
+    if isinstance(value, (list, set, dict)):
+        sorted_variables["mutable"].append(value)
     else:
-        sorted_variables["immutable"].append(x)
-
+        sorted_variables["immutable"].append(value)
